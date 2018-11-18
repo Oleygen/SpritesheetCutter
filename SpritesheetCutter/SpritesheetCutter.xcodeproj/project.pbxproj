@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F84DA79921A1D2B500CC47FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DA79821A1D2B500CC47FA /* Extensions.swift */; };
+		F84DA79B21A1DC4500CC47FA /* ImageViewWithGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DA79A21A1DC4500CC47FA /* ImageViewWithGrid.swift */; };
 		F8CCA4B621A1C88E006014EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCA4B521A1C88E006014EF /* AppDelegate.swift */; };
-		F8CCA4B821A1C88E006014EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCA4B721A1C88E006014EF /* ViewController.swift */; };
+		F8CCA4B821A1C88E006014EF /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCA4B721A1C88E006014EF /* InitialViewController.swift */; };
 		F8CCA4BA21A1C896006014EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CCA4B921A1C896006014EF /* Assets.xcassets */; };
 		F8CCA4BD21A1C896006014EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CCA4BB21A1C896006014EF /* Main.storyboard */; };
+		F8CCA4C621A1CCB9006014EF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCA4C521A1CCB9006014EF /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F84DA79821A1D2B500CC47FA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F84DA79A21A1DC4500CC47FA /* ImageViewWithGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewWithGrid.swift; sourceTree = "<group>"; };
 		F8CCA4B221A1C88E006014EF /* SpritesheetCutter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpritesheetCutter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CCA4B521A1C88E006014EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8CCA4B721A1C88E006014EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8CCA4B721A1C88E006014EF /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		F8CCA4B921A1C896006014EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8CCA4BC21A1C896006014EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8CCA4BE21A1C896006014EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8CCA4BF21A1C896006014EF /* SpritesheetCutter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpritesheetCutter.entitlements; sourceTree = "<group>"; };
+		F8CCA4C521A1CCB9006014EF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +60,14 @@
 			isa = PBXGroup;
 			children = (
 				F8CCA4B521A1C88E006014EF /* AppDelegate.swift */,
-				F8CCA4B721A1C88E006014EF /* ViewController.swift */,
+				F8CCA4B721A1C88E006014EF /* InitialViewController.swift */,
+				F8CCA4C521A1CCB9006014EF /* ImageViewController.swift */,
+				F84DA79A21A1DC4500CC47FA /* ImageViewWithGrid.swift */,
 				F8CCA4B921A1C896006014EF /* Assets.xcassets */,
 				F8CCA4BB21A1C896006014EF /* Main.storyboard */,
 				F8CCA4BE21A1C896006014EF /* Info.plist */,
 				F8CCA4BF21A1C896006014EF /* SpritesheetCutter.entitlements */,
+				F84DA79821A1D2B500CC47FA /* Extensions.swift */,
 			);
 			path = SpritesheetCutter;
 			sourceTree = "<group>";
@@ -95,6 +104,11 @@
 				TargetAttributes = {
 					F8CCA4B121A1C88E006014EF = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -133,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8CCA4B821A1C88E006014EF /* ViewController.swift in Sources */,
+				F8CCA4B821A1C88E006014EF /* InitialViewController.swift in Sources */,
+				F8CCA4C621A1CCB9006014EF /* ImageViewController.swift in Sources */,
+				F84DA79B21A1DC4500CC47FA /* ImageViewWithGrid.swift in Sources */,
 				F8CCA4B621A1C88E006014EF /* AppDelegate.swift in Sources */,
+				F84DA79921A1D2B500CC47FA /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +288,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SpritesheetCutter/SpritesheetCutter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = J77L9EFZEW;
@@ -290,7 +306,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SpritesheetCutter/SpritesheetCutter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = J77L9EFZEW;
